@@ -7,7 +7,8 @@ namespace UnrealBuildTool.Rules
 		public DonAINavigation(ReadOnlyTargetRules Target) : base(Target)
 		{
             PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
-            bEnableShadowVariableWarnings = false;
+            //bEnableShadowVariableWarnings = false;
+			ShadowVariableWarningLevel = WarningLevel.Off;
 
             PublicIncludePaths.AddRange(
 				new string[] {
